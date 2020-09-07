@@ -126,7 +126,14 @@
           </a>
         </section>
       </nav>
+      <!--
 
+['', '', '', '', '', 'd5101-9', 'd5102-0', 'd5102-2', 'd5102-4', 'd5200-0', 'd5200-1', 'd5200-3', 'd5200-4', 'd5201-3', 'd5201-8', 'd5202-9', 'd5203-9', 'd5204-1', 'd5204-4', 'd5204-9', 'd5205-0', 'd5205-1', 'd5205-3', 'd5205-8', 'd53000-1', 'd53000-4', 'd53000-8', 'd53000-9', 'd53001-0', 'd53001-2', 'd53001-3', 'd53001-4', 'd53001-9', 'd53010-2', 'd53010-4', 'd53010-9', 'd53011-3', 'd53011-4', 'd5302-4', 'd5400-0', 'd5400-1', 'd5400-2', 'd5400-8', 'd5401-1', 'd5401-3', 'd5401-4', 'd5401-8', 'd5401-9', 'd5402-0', 'd5403-0', 'd5403-2', 'd5403-9', 'd5404-0', 'd5404-1', 'd5404-4', 'd5404-8', 'd5404-9', 'd5500-0', 'd5500-2', 'd5500-3', 'd5500-4', 'd5500-9', 'd5501-8', 'd5600-4', 'd5600-9', 'd5602-3', 'd5602-4', 'd5602-9', 'd5700-0', 'd5700-2', 'd5700-3', 'd5701-0', 'd5701-1', 'd5701-3', 'd5701-4', 'd5701-8', 'd57020-2', 'd57020-3', 'd57020-4', 'd57020-8', 'd57021-2', 'd57022-3', 'd57022-8', 'd57022-9', 'd571-1', 'd571-2', 'd571-3', 'd571-8']
+
+        0: no impairment, 1: mild impairment, 2: moderate impairment, 3: severe impairment, 4: complete impairment, 
+        8: no specified, 9: not applicable. 
+
+      -->
       <section class="container" id="form-multi">
         <form action="multi/result" method="POST">
           <table>
@@ -140,22 +147,48 @@
             <tbody>
               <tr>
                 <td>1.</td>
-                <td>Gender</td>
-                <td><input type="radio" name="gender" value="1" required> Male</td>
-                <td><input type="radio" name="gender" value="0" checked="checked"> Female</td>
-              </tr>
-              <tr>
-                <td>2.</td>
-                <td>Washing body parts (no impairment)</td>
-                <td><input type="radio" name="d5100-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5100-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>3.</td>
                 <td>Washing body parts (severe impairment)</td>
                 <td><input type="radio" name="d5100-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5100-3" value="0" checked="checked"> No</td>
               </tr>
+              <tr>
+                <td>2.</td>
+                <td>Washing whole body (mild impairment)</td>
+                <td><input type="radio" name="d5101-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d5101-1" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Washing whole body (moderate impairment)</td>
+                <td><input type="radio" name="d5101-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5101-2" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Washing whole body (complete impairment)</td>
+                <td><input type="radio" name="d5101-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5101-4" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>Washing whole body (no specified)</td>
+                <td><input type="radio" name="d5101-8" value="1" required> Yes</td>
+                <td><input type="radio" name="d5101-8" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>Washing whole body (not applicable)</td>
+                <td><input type="radio" name="d5101-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d5101-9" value="0" checked="checked"> No</td>
+              </tr>
+
+
+
+
+
+
+
+
               <tr>
                 <td>4.</td>
                 <td>Washing body parts (complete impairment)</td>
@@ -169,24 +202,9 @@
                 <td><input type="radio" name="d5100-9" value="0" checked="checked"> No</td>
               </tr>
 
-              <tr>
-                <td>6.</td>
-                <td>Washing whole body (no impairment)</td>
-                <td><input type="radio" name="d5101-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5101-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>7.</td>
-                <td>Washing whole body (mild impairment)</td>
-                <td><input type="radio" name="d5101-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5101-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>8.</td>
-                <td>Washing whole body (moderate impairment)</td>
-                <td><input type="radio" name="d5101-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5101-2" value="0" checked="checked"> No</td>
-              </tr>
+              
+
+              
 
               <tr>
                 <td>9.</td>
@@ -834,10 +852,8 @@
               </tr>
         
         <!--
-        Binary features = 111
+        Multi features = 111
 
-        0: no impairment, 1: mild impairment, 2: moderate impairment, 3: severe impairment, 4: complete impairment, 
-        8: no specified, 9: not applicable. 
         -->
 
             </tbody>

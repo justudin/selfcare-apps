@@ -1,3 +1,6 @@
+'''
+Created by Muhammad Syafrudin <github.com/justudin>
+'''
 # USAGE
 # Start the server:
 # 	python app.py
@@ -20,7 +23,6 @@ model_multi = None
 
 def load_model_binary():
 	global model_binary
-	# load model from file
 	model_binary = load("./models/scadi-binary.model")
 	print("Successfully loaded model: scadi-binary.model")
 
@@ -86,11 +88,16 @@ def multi_result():
 	
 	return render_template('result.html', classtype=classtype, status=status)
 
+
 # if this is the main thread of execution first load the model and
 # then start the server
 if __name__ == "__main__":
 	print(("* Loading the models and Flask starting server..."
 		"please wait until server has fully started"))
+	# load the model (binary)
 	load_model_binary()
+	# load the model (multi)
 	load_model_multi()
-	app.run(host='localhost',port=2097,debug=True)
+
+	# start the server at localhost:2097 (NOT FOR PRODUCTION!)
+	app.run(host='localhost', port=2097, debug=True)
