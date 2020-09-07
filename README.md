@@ -2,7 +2,7 @@
 An implementation of Self-Care Prediction for Children with Disability
 
 ## Install Anaconda 
-Download and install anaconda
+Download and install anaconda: https://www.anaconda.com/products/individual
 
 ## Creating an environment from an environment.yml file
 
@@ -21,4 +21,8 @@ python app.py
 ## Open your browser
 
 http://localhost:2097
+
+## Credits
+
+Thanks to Milligram CSS, Flask, XGboost, and all libraries in environment.yml file.
 
