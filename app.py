@@ -62,14 +62,25 @@ def binary_result():
 	dtInput = pd.DataFrame.from_dict(formdata,orient='columns').astype(int)
 	classtype = 'binary'
 	
-	predictions = model_binary.predict(dtInput)
-	if predictions == 1:
-		status = 'Having self-care problem (1)'
+	prediction = model_binary.predict(dtInput)
+	if prediction[0] == 1:
+		status = 'Having self-care issue'
 	else:
-		status = 'Not having self-care problem (0)'
+		status = 'No issue'
 	
 	return render_template('result.html', classtype=classtype, status=status)
 
+def get_multiclass_status(prediction):
+    multi_class_status = {
+        1: "Unable to do caring for body parts",
+        2: "Unable to do toileting",
+        3: "Unable to do dressing",
+        4: "Unable to do washing and caring for body parts and dressing",
+        5: "Unable to do washing, caring for body parts, toileting, and dressing",
+        6: "Unable to do eating, drinking, washing, caring for body parts, toileting, and dressing",
+        7: "No issues"
+    }
+    return multi_class_status.get(prediction, "Invalid prediction")
 
 @app.route("/multi/result", methods=["POST"])
 def multi_result():
@@ -80,11 +91,9 @@ def multi_result():
 	dtInput = pd.DataFrame.from_dict(formdata,orient='columns').astype(int)
 	classtype = 'multi'
 	
-	predictions = model_multi.predict(dtInput)
-	if predictions == 1:
-		status = 'Having self-care problem (1)'
-	else:
-		status = 'Not having self-care problem (0)'
+	prediction = model_multi.predict(dtInput)
+	print(prediction[0])
+	status = get_multiclass_status(prediction[0])
 	
 	return render_template('result.html', classtype=classtype, status=status)
 

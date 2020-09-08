@@ -103,7 +103,7 @@
               </g>
               </svg>
             &nbsp;
-          <a href="/multi"><h1 class="title">Self-Care Prediction (Multi)</h1></a>
+          <a href="/multi"><h1 class="title">Self-Care Prediction (multi-class)</h1></a>
           </a>
           <a
             href="https://github.com/justudin/selfcare-apps"
@@ -126,14 +126,7 @@
           </a>
         </section>
       </nav>
-      <!--
 
-['', '', '', '', '', 'd5101-9', 'd5102-0', 'd5102-2', 'd5102-4', 'd5200-0', 'd5200-1', 'd5200-3', 'd5200-4', 'd5201-3', 'd5201-8', 'd5202-9', 'd5203-9', 'd5204-1', 'd5204-4', 'd5204-9', 'd5205-0', 'd5205-1', 'd5205-3', 'd5205-8', 'd53000-1', 'd53000-4', 'd53000-8', 'd53000-9', 'd53001-0', 'd53001-2', 'd53001-3', 'd53001-4', 'd53001-9', 'd53010-2', 'd53010-4', 'd53010-9', 'd53011-3', 'd53011-4', 'd5302-4', 'd5400-0', 'd5400-1', 'd5400-2', 'd5400-8', 'd5401-1', 'd5401-3', 'd5401-4', 'd5401-8', 'd5401-9', 'd5402-0', 'd5403-0', 'd5403-2', 'd5403-9', 'd5404-0', 'd5404-1', 'd5404-4', 'd5404-8', 'd5404-9', 'd5500-0', 'd5500-2', 'd5500-3', 'd5500-4', 'd5500-9', 'd5501-8', 'd5600-4', 'd5600-9', 'd5602-3', 'd5602-4', 'd5602-9', 'd5700-0', 'd5700-2', 'd5700-3', 'd5701-0', 'd5701-1', 'd5701-3', 'd5701-4', 'd5701-8', 'd57020-2', 'd57020-3', 'd57020-4', 'd57020-8', 'd57021-2', 'd57022-3', 'd57022-8', 'd57022-9', 'd571-1', 'd571-2', 'd571-3', 'd571-8']
-
-        0: no impairment, 1: mild impairment, 2: moderate impairment, 3: severe impairment, 4: complete impairment, 
-        8: no specified, 9: not applicable. 
-
-      -->
       <section class="container" id="form-multi">
         <form action="multi/result" method="POST">
           <table>
@@ -181,681 +174,502 @@
                 <td><input type="radio" name="d5101-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5101-9" value="0" checked="checked"> No</td>
               </tr>
-
-
-
-
-
-
-
-
               <tr>
-                <td>4.</td>
-                <td>Washing body parts (complete impairment)</td>
-                <td><input type="radio" name="d5100-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d5100-4" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>5.</td>
-                <td>Washing body parts (not applicable)</td>
-                <td><input type="radio" name="d5100-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5100-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              
-
-              
-
-              <tr>
-                <td>9.</td>
+                <td>7.</td>
                 <td>Drying oneself (no impairment)</td>
                 <td><input type="radio" name="d5102-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5102-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
+                <td>8.</td>
+                <td>Drying oneself (moderate impairment)</td>
+                <td><input type="radio" name="d5102-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5102-2" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>Drying oneself (complete impairment)</td>
+                <td><input type="radio" name="d5102-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5102-4" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
                 <td>10.</td>
-                <td>Drying oneself (no specified)</td>
-                <td><input type="radio" name="d5102-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5102-8" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>11.</td>
-                <td>Drying oneself (not applicable)</td>
-                <td><input type="radio" name="d5102-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5102-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>12.</td>
                 <td>Caring for skin (no impairment)</td>
                 <td><input type="radio" name="d5200-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5200-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>13.</td>
+                <td>11.</td>
                 <td>Caring for skin (mild impairment)</td>
                 <td><input type="radio" name="d5200-1" value="1" required> Yes</td>
                 <td><input type="radio" name="d5200-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>14.</td>
-                <td>Caring for skin (moderate impairment)</td>
-                <td><input type="radio" name="d5200-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5200-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>15.</td>
+                <td>12.</td>
                 <td>Caring for skin (severe impairment)</td>
                 <td><input type="radio" name="d5200-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5200-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>16.</td>
+                <td>13.</td>
                 <td>Caring for skin (complete impairment)</td>
                 <td><input type="radio" name="d5200-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d5200-4" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>17.</td>
-                <td>Caring for teeth (no impairment)</td>
-                <td><input type="radio" name="d5201-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5201-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>18.</td>
-                <td>Caring for teeth (mild impairment)</td>
-                <td><input type="radio" name="d5201-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5201-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>19.</td>
-                <td>Caring for teeth (moderate impairment)</td>
-                <td><input type="radio" name="d5201-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5201-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>20.</td>
+                <td>14.</td>
                 <td>Caring for teeth (severe impairment)</td>
                 <td><input type="radio" name="d5201-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5201-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>21.</td>
+                <td>15.</td>
                 <td>Caring for teeth (no specified)</td>
                 <td><input type="radio" name="d5201-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d5201-8" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>22.</td>
-                <td>Caring for hair (moderate impairment)</td>
-                <td><input type="radio" name="d5202-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5202-2" value="0" checked="checked"> No</td>
+                <td>16.</td>
+                <td>Caring for hair (not applicable)</td>
+                <td><input type="radio" name="d5202-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d5202-9" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>23.</td>
-                <td>Caring for hair (no specified)</td>
-                <td><input type="radio" name="d5202-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5202-8" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>24.</td>
-                <td>Caring for fingernails (mild impairment)</td>
-                <td><input type="radio" name="d5203-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5203-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>25.</td>
-                <td>Caring for fingernails (moderate impairment)</td>
-                <td><input type="radio" name="d5203-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5203-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>26.</td>
-                <td>Caring for fingernails (severe impairment)</td>
-                <td><input type="radio" name="d5203-3" value="1" required> Yes</td>
-                <td><input type="radio" name="d5203-3" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>27.</td>
+                <td>17.</td>
                 <td>Caring for fingernails (not applicable)</td>
                 <td><input type="radio" name="d5203-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5203-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>28.</td>
-                <td>Caring for toenails (no impairment)</td>
-                <td><input type="radio" name="d5204-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5204-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>29.</td>
+                <td>18.</td>
                 <td>Caring for toenails (mild impairment)</td>
                 <td><input type="radio" name="d5204-1" value="1" required> Yes</td>
                 <td><input type="radio" name="d5204-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>30.</td>
-                <td>Caring for toenails (moderate impairment)</td>
-                <td><input type="radio" name="d5204-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5204-2" value="0" checked="checked"> No</td>
+                <td>19.</td>
+                <td>Caring for toenails (complete impairment)</td>
+                <td><input type="radio" name="d5204-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5204-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>31.</td>
-                <td>Caring for toenails (severe impairment)</td>
-                <td><input type="radio" name="d5204-3" value="1" required> Yes</td>
-                <td><input type="radio" name="d5204-3" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>32.</td>
+                <td>20.</td>
                 <td>Caring for toenails (not applicable)</td>
                 <td><input type="radio" name="d5204-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5204-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>33.</td>
-                <td>Caring for nose (moderate impairment)</td>
-                <td><input type="radio" name="d5205-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5205-2" value="0" checked="checked"> No</td>
+                <td>21.</td>
+                <td>Caring for nose (no impairment)</td>
+                <td><input type="radio" name="d5205-0" value="1" required> Yes</td>
+                <td><input type="radio" name="d5205-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>34.</td>
+                <td>22.</td>
+                <td>Caring for nose (mild impairment)</td>
+                <td><input type="radio" name="d5205-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d5205-1" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>23.</td>
                 <td>Caring for nose (severe impairment)</td>
                 <td><input type="radio" name="d5205-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5205-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>35.</td>
+                <td>24.</td>
                 <td>Caring for nose (no specified)</td>
                 <td><input type="radio" name="d5205-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d5205-8" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>36.</td>
+                <td>25.</td>
                 <td>Indicating need for urination (mild impairment)</td>
                 <td><input type="radio" name="d53000-1" value="1" required> Yes</td>
                 <td><input type="radio" name="d53000-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>37.</td>
+                <td>26.</td>
                 <td>Indicating need for urination (complete impairment)</td>
                 <td><input type="radio" name="d53000-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d53000-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>38.</td>
+                <td>27.</td>
                 <td>Indicating need for urination (no specified)</td>
                 <td><input type="radio" name="d53000-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d53000-8" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>39.</td>
+                <td>28.</td>
+                <td>Indicating need for urination (not applicable)</td>
+                <td><input type="radio" name="d53000-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d53000-9" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>29.</td>
+                <td>Carrying out urination appropriately (no impairment)</td>
+                <td><input type="radio" name="d53001-0" value="1" required> Yes</td>
+                <td><input type="radio" name="d53001-0" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>30.</td>
+                <td>Carrying out urination appropriately (mild impairment)</td>
+                <td><input type="radio" name="d53001-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d53001-2" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>31.</td>
+                <td>Carrying out urination appropriately (severe impairment)</td>
+                <td><input type="radio" name="d53001-3" value="1" required> Yes</td>
+                <td><input type="radio" name="d53001-3" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>32.</td>
                 <td>Carrying out urination appropriately (complete impairment)</td>
                 <td><input type="radio" name="d53001-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d53001-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>40.</td>
+                <td>33.</td>
                 <td>Carrying out urination appropriately (not applicable)</td>
                 <td><input type="radio" name="d53001-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d53001-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>41.</td>
+                <td>34.</td>
                 <td>Indicating need for defecation (moderate impairment)</td>
                 <td><input type="radio" name="d53010-2" value="1" required> Yes</td>
                 <td><input type="radio" name="d53010-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>42.</td>
+                <td>35.</td>
                 <td>Indicating need for defecation (complete impairment)</td>
                 <td><input type="radio" name="d53010-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d53010-4" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>43.</td>
+                <td>36.</td>
+                <td>Indicating need for defecation (not applicable)</td>
+                <td><input type="radio" name="d53010-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d53010-9" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>37.</td>
                 <td>Carrying out defecation appropriately (severe impairment)</td>
                 <td><input type="radio" name="d53011-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d53011-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>44.</td>
+                <td>38.</td>
                 <td>Carrying out defecation appropriately (complete impairment)</td>
                 <td><input type="radio" name="d53011-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d53011-4" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>45.</td>
-                <td>Menstrual care (mild impairment)</td>
-                <td><input type="radio" name="d5302-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5302-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>46.</td>
-                <td>Menstrual care (moderate impairment)</td>
-                <td><input type="radio" name="d5302-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5302-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>47.</td>
+                <td>39.</td>
                 <td>Menstrual care (complete impairment)</td>
                 <td><input type="radio" name="d5302-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d5302-4" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>48.</td>
+                <td>40.</td>
                 <td>Putting clothes (no impairment)</td>
                 <td><input type="radio" name="d5400-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5400-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>49.</td>
+                <td>41.</td>
                 <td>Putting clothes (mild impairment)</td>
                 <td><input type="radio" name="d5400-1" value="1" required> Yes</td>
                 <td><input type="radio" name="d5400-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>50.</td>
-                <td>Putting clothes (not applicable)</td>
-                <td><input type="radio" name="d5400-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5400-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>51.</td>
-                <td>Taking off clothes (no impairment)</td>
-                <td><input type="radio" name="d5401-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5401-0" value="0" checked="checked"> No</td>
+                <td>42.</td>
+                <td>Putting clothes (moderate impairment)</td>
+                <td><input type="radio" name="d5400-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5400-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>52.</td>
+                <td>43.</td>
+                <td>Putting clothes (no specified)</td>
+                <td><input type="radio" name="d5400-8" value="1" required> Yes</td>
+                <td><input type="radio" name="d5400-8" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>44.</td>
+                <td>Taking off clothes (mild impairment)</td>
+                <td><input type="radio" name="d5401-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d5401-1" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>45.</td>
                 <td>Taking off clothes (severe impairment)</td>
                 <td><input type="radio" name="d5401-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5401-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>53.</td>
+                <td>46.</td>
                 <td>Taking off clothes (complete impairment)</td>
                 <td><input type="radio" name="d5401-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d5401-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>54.</td>
+                <td>47.</td>
                 <td>Taking off clothes (no specified)</td>
                 <td><input type="radio" name="d5401-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d5401-8" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>55.</td>
-                <td>Putting on footwear (mild impairment)</td>
-                <td><input type="radio" name="d5402-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5402-1" value="0" checked="checked"> No</td>
+                <td>48.</td>
+                <td>Taking off clothes (not applicable)</td>
+                <td><input type="radio" name="d5401-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d5401-9" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>56.</td>
-                <td>Putting on footwear (moderate impairment)</td>
-                <td><input type="radio" name="d5402-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5402-2" value="0" checked="checked"> No</td>
+                <td>49.</td>
+                <td>Putting on footwear (no impairment)</td>
+                <td><input type="radio" name="d5402-0" value="1" required> Yes</td>
+                <td><input type="radio" name="d5402-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>57.</td>
-                <td>Putting on footwear (complete impairment)</td>
-                <td><input type="radio" name="d5402-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d5402-4" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>58.</td>
-                <td>Putting on footwear (no specified)</td>
-                <td><input type="radio" name="d5402-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5402-8" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>59.</td>
+                <td>50.</td>
                 <td>Taking off footwear (no impairment)</td>
                 <td><input type="radio" name="d5403-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5403-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>60.</td>
-                <td>Taking off footwear (mild impairment)</td>
-                <td><input type="radio" name="d5403-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5403-1" value="0" checked="checked"> No</td>
+                <td>51.</td>
+                <td>Taking off footwear (moderate impairment)</td>
+                <td><input type="radio" name="d5403-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5403-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>61.</td>
-                <td>Taking off footwear (no specified)</td>
-                <td><input type="radio" name="d5403-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5403-8" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>62.</td>
+                <td>52.</td>
                 <td>Taking off footwear (not applicable)</td>
                 <td><input type="radio" name="d5403-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5403-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>63.</td>
+                <td>53.</td>
                 <td>Choosing appropriate clothing (no impairment)</td>
                 <td><input type="radio" name="d5404-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5404-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>64.</td>
-                <td>Choosing appropriate clothing (severe impairment)</td>
-                <td><input type="radio" name="d5404-3" value="1" required> Yes</td>
-                <td><input type="radio" name="d5404-3" value="0" checked="checked"> No</td>
+                <td>54.</td>
+                <td>Choosing appropriate clothing (mild impairment)</td>
+                <td><input type="radio" name="d5404-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d5404-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>65.</td>
+                <td>55.</td>
+                <td>Choosing appropriate clothing (complete impairment)</td>
+                <td><input type="radio" name="d5404-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5404-4" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>56.</td>
+                <td>Choosing appropriate clothing (no specified)</td>
+                <td><input type="radio" name="d5404-8" value="1" required> Yes</td>
+                <td><input type="radio" name="d5404-8" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>57.</td>
                 <td>Choosing appropriate clothing (not applicable)</td>
                 <td><input type="radio" name="d5404-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5404-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>66.</td>
-                <td>Indicating need for eating (no specified)</td>
-                <td><input type="radio" name="d5500-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5500-8" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>67.</td>
-                <td>Carrying out eating appropriately (no impairment)</td>
-                <td><input type="radio" name="d5501-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5501-0" value="0" checked="checked"> No</td>
+                <td>58.</td>
+                <td>Indicating need for eating (no impairment)</td>
+                <td><input type="radio" name="d5500-0" value="1" required> Yes</td>
+                <td><input type="radio" name="d5500-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>68.</td>
-                <td>Carrying out eating appropriately (mild impairment)</td>
-                <td><input type="radio" name="d5501-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5501-1" value="0" checked="checked"> No</td>
+                <td>59.</td>
+                <td>Indicating need for eating (moderate impairment)</td>
+                <td><input type="radio" name="d5500-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5500-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>69.</td>
-                <td>Carrying out eating appropriately (complete impairment)</td>
-                <td><input type="radio" name="d5501-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d5501-4" value="0" checked="checked"> No</td>
+                <td>60.</td>
+                <td>Indicating need for eating (severe impairment)</td>
+                <td><input type="radio" name="d5500-3" value="1" required> Yes</td>
+                <td><input type="radio" name="d5500-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>70.</td>
+                <td>61.</td>
+                <td>Indicating need for eating (complete impairment)</td>
+                <td><input type="radio" name="d5500-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5500-4" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>62.</td>
+                <td>Indicating need for eating (not applicable)</td>
+                <td><input type="radio" name="d5500-9" value="1" required> Yes</td>
+                <td><input type="radio" name="d5500-9" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>63.</td>
                 <td>Carrying out eating appropriately (no specified)</td>
                 <td><input type="radio" name="d5501-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d5501-8" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>71.</td>
-                <td>Carrying out eating appropriately (not applicable)</td>
-                <td><input type="radio" name="d5501-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5501-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>72.</td>
-                <td>Indicating need for drinking (no impairment)</td>
-                <td><input type="radio" name="d5600-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5600-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>73.</td>
-                <td>Indicating need for drinking (mild impairment)</td>
-                <td><input type="radio" name="d5600-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5600-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>74.</td>
-                <td>Indicating need for drinking (moderate impairment)</td>
-                <td><input type="radio" name="d5600-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5600-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>75.</td>
+                <td>64.</td>
                 <td>Indicating need for drinking (complete impairment)</td>
                 <td><input type="radio" name="d5600-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d5600-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>76.</td>
-                <td>Indicating need for drinking (no specified)</td>
-                <td><input type="radio" name="d5600-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5600-8" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>77.</td>
+                <td>65.</td>
                 <td>Indicating need for drinking (not applicable)</td>
                 <td><input type="radio" name="d5600-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5600-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>78.</td>
-                <td>Carrying out feeding from bottle (no impairment)</td>
-                <td><input type="radio" name="d5602-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d5602-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>79.</td>
-                <td>Carrying out feeding from bottle (mild impairment)</td>
-                <td><input type="radio" name="d5602-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d5602-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>80.</td>
+                <td>66.</td>
                 <td>Carrying out feeding from bottle (severe impairment)</td>
                 <td><input type="radio" name="d5602-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5602-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>81.</td>
-                <td>Carrying out feeding from bottle (no specified)</td>
-                <td><input type="radio" name="d5602-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5602-8" value="0" checked="checked"> No</td>
+                <td>67.</td>
+                <td>Carrying out feeding from bottle (complete impairment)</td>
+                <td><input type="radio" name="d5602-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d5602-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>82.</td>
+                <td>68.</td>
                 <td>Carrying out feeding from bottle (not applicable)</td>
                 <td><input type="radio" name="d5602-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d5602-9" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>83.</td>
+                <td>69.</td>
                 <td>Ensuring one’s physical comfort (no impairment)</td>
                 <td><input type="radio" name="d5700-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5700-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>84.</td>
-                <td>Ensuring one’s physical comfort (complete impairment)</td>
-                <td><input type="radio" name="d5700-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d5700-4" value="0" checked="checked"> No</td>
+                <td>70.</td>
+                <td>Ensuring one’s physical comfort (moderate impairment)</td>
+                <td><input type="radio" name="d5700-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d5700-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>85.</td>
-                <td>Ensuring one’s physical comfort (no specified)</td>
-                <td><input type="radio" name="d5700-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d5700-8" value="0" checked="checked"> No</td>
+                <td>71.</td>
+                <td>Ensuring one’s physical comfort (severe impairment)</td>
+                <td><input type="radio" name="d5700-3" value="1" required> Yes</td>
+                <td><input type="radio" name="d5700-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>86.</td>
-                <td>Ensuring one’s physical comfort (not applicable)</td>
-                <td><input type="radio" name="d5700-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5700-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>87.</td>
+                <td>72.</td>
                 <td>Managing diet and fitness (no impairment)</td>
                 <td><input type="radio" name="d5701-0" value="1" required> Yes</td>
                 <td><input type="radio" name="d5701-0" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>88.</td>
-                <td>Managing diet and fitness (moderate impairment)</td>
-                <td><input type="radio" name="d5701-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d5701-2" value="0" checked="checked"> No</td>
+                <td>73.</td>
+                <td>Managing diet and fitness (mild impairment)</td>
+                <td><input type="radio" name="d5701-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d5701-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>89.</td>
+                <td>74.</td>
                 <td>Managing diet and fitness (severe impairment)</td>
                 <td><input type="radio" name="d5701-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d5701-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>90.</td>
+                <td>75.</td>
                 <td>Managing diet and fitness (complete impairment)</td>
                 <td><input type="radio" name="d5701-4" value="1" required> Yes</td>
                 <td><input type="radio" name="d5701-4" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>91.</td>
+                <td>76.</td>
                 <td>Managing diet and fitness (no specified)</td>
                 <td><input type="radio" name="d5701-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d5701-8" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>92.</td>
-                <td>Managing diet and fitness (not applicable)</td>
-                <td><input type="radio" name="d5701-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d5701-9" value="0" checked="checked"> No</td>
+                <td>77.</td>
+                <td>Managing medications and following health advice (moderate impairment)</td>
+                <td><input type="radio" name="d57020-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d57020-2" value="0" checked="checked"> No</td>
               </tr>
-
               <tr>
-                <td>93.</td>
+                <td>78.</td>
                 <td>Managing medications and following health advice (severe impairment)</td>
                 <td><input type="radio" name="d57020-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d57020-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>94.</td>
+                <td>79.</td>
+                <td>Managing medications and following health advice (complete impairment)</td>
+                <td><input type="radio" name="d57020-4" value="1" required> Yes</td>
+                <td><input type="radio" name="d57020-4" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>80.</td>
                 <td>Managing medications and following health advice (no specified)</td>
                 <td><input type="radio" name="d57020-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d57020-8" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>95.</td>
-                <td>Managing medications and following health advice (not applicable)</td>
-                <td><input type="radio" name="d57020-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d57020-9" value="0" checked="checked"> No</td>
-              </tr>
- 
-              <tr>
-                <td>96.</td>
+                <td>81.</td>
                 <td>Seeking advice or assistance from caregivers or professionals (moderate impairment)</td>
                 <td><input type="radio" name="d57021-2" value="1" required> Yes</td>
                 <td><input type="radio" name="d57021-2" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>97.</td>
-                <td>Seeking advice or assistance from caregivers or professionals (complete impairment)</td>
-                <td><input type="radio" name="d57021-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d57021-4" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>98.</td>
-                <td>Seeking advice or assistance from caregivers or professionals (no specified)</td>
-                <td><input type="radio" name="d57021-8" value="1" required> Yes</td>
-                <td><input type="radio" name="d57021-8" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>99.</td>
-                <td>Seeking advice or assistance from caregivers or professionals (not applicable)</td>
-                <td><input type="radio" name="d57021-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d57021-9" value="0" checked="checked"> No</td>
-              </tr>
-
-              <tr>
-                <td>100.</td>
-                <td>Avoiding risks of abuse of drugs or alcohol (no impairment)</td>
-                <td><input type="radio" name="d57022-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d57022-0" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>101.</td>
-                <td>Avoiding risks of abuse of drugs or alcohol (mild impairment)</td>
-                <td><input type="radio" name="d57022-1" value="1" required> Yes</td>
-                <td><input type="radio" name="d57022-1" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>102.</td>
-                <td>Avoiding risks of abuse of drugs or alcohol (moderate impairment)</td>
-                <td><input type="radio" name="d57022-2" value="1" required> Yes</td>
-                <td><input type="radio" name="d57022-2" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>103.</td>
+                <td>82.</td>
                 <td>Avoiding risks of abuse of drugs or alcohol (severe impairment)</td>
                 <td><input type="radio" name="d57022-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d57022-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>104.</td>
-                <td>Avoiding risks of abuse of drugs or alcohol (complete impairment)</td>
-                <td><input type="radio" name="d57022-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d57022-4" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>105.</td>
+                <td>83.</td>
                 <td>Avoiding risks of abuse of drugs or alcohol (no specified)</td>
                 <td><input type="radio" name="d57022-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d57022-8" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>106.</td>
+                <td>84.</td>
                 <td>Avoiding risks of abuse of drugs or alcohol (not applicable)</td>
                 <td><input type="radio" name="d57022-9" value="1" required> Yes</td>
                 <td><input type="radio" name="d57022-9" value="0" checked="checked"> No</td>
               </tr>
- 
               <tr>
-                <td>107.</td>
+                <td>85.</td>
                 <td>Looking after one’s safety (no impairment)</td>
-                <td><input type="radio" name="d571-0" value="1" required> Yes</td>
-                <td><input type="radio" name="d571-0" value="0" checked="checked"> No</td>
+                <td><input type="radio" name="d571-1" value="1" required> Yes</td>
+                <td><input type="radio" name="d571-1" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>108.</td>
+                <td>86.</td>
+                <td>Looking after one’s safety (mild impairment)</td>
+                <td><input type="radio" name="d571-2" value="1" required> Yes</td>
+                <td><input type="radio" name="d571-2" value="0" checked="checked"> No</td>
+              </tr>
+              <tr>
+                <td>87.</td>
                 <td>Looking after one’s safety (severe impairment)</td>
                 <td><input type="radio" name="d571-3" value="1" required> Yes</td>
                 <td><input type="radio" name="d571-3" value="0" checked="checked"> No</td>
               </tr>
               <tr>
-                <td>109.</td>
-                <td>Looking after one’s safety (complete impairment)</td>
-                <td><input type="radio" name="d571-4" value="1" required> Yes</td>
-                <td><input type="radio" name="d571-4" value="0" checked="checked"> No</td>
-              </tr>
-              <tr>
-                <td>110.</td>
+                <td>88.</td>
                 <td>Looking after one’s safety (no specified)</td>
                 <td><input type="radio" name="d571-8" value="1" required> Yes</td>
                 <td><input type="radio" name="d571-8" value="0" checked="checked"> No</td>
               </tr>
-              <tr>
-                <td>111.</td>
-                <td>Looking after one’s safety (not applicable)</td>
-                <td><input type="radio" name="d571-9" value="1" required> Yes</td>
-                <td><input type="radio" name="d571-9" value="0" checked="checked"> No</td>
-              </tr>
-        
+            
         <!--
-        Multi features = 111
-
+        Multi features = 88
         -->
-
             </tbody>
           </table>
           <center><input class="button-primary" type="submit" value="Submit"></center>
